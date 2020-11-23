@@ -10,3 +10,26 @@
 .navbar-lewagon .navbar-brand img {
   width: 40px;
 }
+
+.navbar-wrapper {
+  height: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f1c453;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+  h1 {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    padding-top: 10px;
+    margin-left: 20px;
+  }
+}
+
+.navbar-right {
+  display: right;
+  align-items: center;
+}

@@ -11,6 +11,20 @@
   </head>
 
   <body>
+    <div class="navbar-wrapper">
+      <div class="navbar-left">
+      <%= image_tag "cocktail.jpg", alt: "Cocktail", class: "logo" %>
+      <h1>Them Cocktails</h1>
+      </div>
+      <div class="navbar-right">
+        <% unless controller_name == "cocktails" && action_name == "new" %>
+          <%= link_to "Create a new cocktail", new_cocktail_path, class: "btn btn-create-cocktail" %>
+        <% end %>
+        <% unless controller_name == "cocktails" && action_name == "index" %>
+          <%= link_to "Go back to cocktails list", root_path, class: "btn btn-homepage" %>
+        <% end %>
+      </div>
+    </div>
     <%= yield %>
   </body>
 </html>

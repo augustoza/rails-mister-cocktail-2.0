@@ -1,0 +1,9 @@
+<div class="form-wrapper">
+  <div class="form">
+    <h2>Create a new cocktail!</h2>
+    <%= simple_form_for @cocktail do |f| %>
+      <%= f.input :name %>
+      <%= f.submit "Submit cocktail", class: "btn btn-form" %>
+    <% end %>
+  </div>
+</div>

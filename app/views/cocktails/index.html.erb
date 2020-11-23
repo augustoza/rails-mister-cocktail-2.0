@@ -1,0 +1,8 @@
+<h1>Cocktails</h1>
+<div class="card-test">
+  <% @cocktails.each do |cocktail| %>
+    <div class="card-container">
+      <%= link_to cocktail.name, cocktail_path(cocktail), { class: "card-each" } %>
+    </div>
+  <% end %>
+</div>

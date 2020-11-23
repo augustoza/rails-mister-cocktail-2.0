@@ -1,0 +1,19 @@
+.card-each {
+  height: 220px;
+  width: 270px;
+  background-color: red;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;;
+  margin-left: 20px;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+}
+
+.card-test {
+  display: flex;
+}
